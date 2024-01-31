@@ -1,0 +1,266 @@
+
+.custom-nav {
+    padding-top: 18px;
+}
+
+.nav-link {
+    font-size: 18px;
+}
+
+
+.about-img {
+    text-align: center; 
+}
+
+#about{
+    margin-top: 5%;
+}
+
+.about-img img {
+
+   width: 500px;
+   height: 500px;
+}
+
+
+#projects {
+    margin-top: 10%;
+}
+
+.project .row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -12px;
+    margin-left: -12px;
+}
+
+.project .col-lg-4,
+.project .col-md-6 {
+    padding-right: 12px;
+    padding-left: 12px;
+    box-shadow: 0px 0px 18px 0 #0000002c;
+    transition: 0.3s ease box-shadow;
+}
+
+#projects .project-items {
+    width: 100%;
+}
+
+#projects .project-item {
+    width: 100%;
+}
+
+#projects .mb-4 {
+    margin-bottom: 5rem;
+}
+
+#projects .card {
+    border-radius: 10px;
+}
+
+#projects .card:hover {
+    box-shadow: 0px 0px 5px 0 #0000002c;
+}
+
+#contact{
+    margin-top: 10%;
+
+}
+#contact .contact {
+    flex-direction: column;
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 90%;
+}
+
+#contact .contact-items {
+    width: 100%;
+}
+
+#contact .contact-item {
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    margin: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 0px 0px 18px 0 #0000002c;
+    transition: 0.3s ease box-shadow;
+}
+
+#contact .contact-item:hover {
+    box-shadow: 0px 0px 5px 0 #0000002c;
+}
+
+#contact .icon {
+    width: 70px;
+    margin: 0 auto;
+    margin-bottom: 10px;
+}
+
+#contact .contact-info h1 {
+    font-size: 15px;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+#contact .contact-info h2 {
+    font-size: 15px; /* Increased font size */
+    line-height: 2rem; /* Adjusted line height */
+    font-weight: 600;
+}
+
+
+
+/*End contact Section */
+
+
+/* Footer */
+/* Footer Styles */
+footer {
+    padding-top: 40px;
+    background-color: #343a40; /* Dark background color */
+    color: #fff; /* Light text color */
+}
+
+footer h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+footer p {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+footer a {
+    color: #fff; /* Link color */
+}
+
+.social-icons {
+    font-size: 24px;
+}
+
+.social-icons a {
+    margin-right: 15px;
+}
+
+/* Center text in the last section */
+.text-center {
+    text-align: center;
+}
+
+
+
+/* Media Queries */
+@media (max-width: 600px) {
+    .nav {
+        flex-direction: column;
+    }
+
+    .nav-item {
+        margin-bottom: 8px;
+    }
+    .about-img img {
+        max-width: 100%; /* Allow the image to be responsive */
+        height: auto;
+        width: 100%; /* Set image width to 100% of the container */
+        max-height: 400px; /* Set a maximum height if needed */
+        margin-bottom: 15px;
+    }
+
+
+    #projects {
+        margin-top: 10%;
+    }
+
+    /* Adjusted styles for center-aligning project items */
+    .project-items {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .project-item {
+        flex: 0 0 100%;
+    }
+
+    #contact .contact-item {
+        width: 100%;
+    }
+
+    #contact .contact-info h1 {
+        font-size: 15px;
+    }
+
+    #contact .contact-info h2 {
+        font-size: 15px;
+    }
+}
+
+@media (min-width: 601px) and (max-width: 992px) {
+    .nav {
+        justify-content: center;
+    }
+
+    .nav-item {
+        margin-right: 15px;
+    }
+    .about-img img {
+        max-width: 100%; /* Allow the image to be responsive */
+        height: auto;
+        width: 100%; /* Set image width to 100% of the container */
+        max-height: 500px; /* Set a maximum height if needed */
+        margin-bottom: 15px;
+    }
+
+    /* Adjusted styles for center-aligning project items */
+    .project-items {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .project-item {
+        flex: 0 0 calc(50% - 20px); /* Two items per row with margin */
+        margin: 10px;
+    }
+
+    #contact .contact-item {
+        width: 100%;
+    }
+
+    #contact .contact-info h1 {
+        font-size: 20px;
+    }
+
+    #contact .contact-info h2 {
+        font-size: 20px;
+    }
+}
+
+/* Common styles for larger screens */
+@media (min-width: 993px) {
+    
+    #contact .contact-item {
+        width: 100%;
+    }
+    .about-img img {
+        max-width: 100%; /* Allow the image to be responsive */
+        height: auto;
+        width: 100%; /* Set image width to 100% of the container */
+        max-height: 500px; /* Set a maximum height if needed */
+        margin-bottom: 15px;
+    }
+
+    #contact .contact-info h1 {
+        font-size: 15px;
+    }
+
+    #contact .contact-info h2 {
+        font-size: 15px;
+    }
+}
